@@ -1,0 +1,17 @@
+{
+  "name": "mikroorm-contains-joinon-repro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.1.4",
+    "@mikro-orm/decorators": "^7.1.4",
+    "@mikro-orm/postgresql": "7.1.4"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3",
+    "vitest": "^2.1.0"
+  }
+}
