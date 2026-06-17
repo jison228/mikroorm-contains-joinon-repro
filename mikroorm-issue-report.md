@@ -79,6 +79,7 @@ The array operator should serialize identically whether the predicate lands in t
 
 - This looks like the same class of bug as a previously reported/fixed JOIN-ON array case, but reached via `populateWhere` on a relation; the array-vs-tuple handling does not appear to be applied in this JOIN-ON path.
 - Single-element arrays mask the bug (`(?)` === `?`); reproduce with **2+** elements.
+- Reproduced on **7.1.4** (latest stable) and on **7.1.5-dev.15** (latest dev build) — identical malformed JOIN-ON output in both. Verified on Node 24.
 
 ## Versions
 
