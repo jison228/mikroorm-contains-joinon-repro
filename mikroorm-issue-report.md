@@ -31,7 +31,14 @@ This is a regression from v6, where the array literal was produced in both posit
 
 ## Reproduction
 
-Minimal runnable repro (entities + a 3-test vitest file) is attached / available here: **<link to gist or repo>**.
+Minimal runnable repro (entities + a 3-test vitest file) is here: **https://github.com/jison228/mikroorm-contains-joinon-repro**
+
+```bash
+git clone https://github.com/jison228/mikroorm-contains-joinon-repro
+cd mikroorm-contains-joinon-repro && npm install
+DATABASE_URL=postgresql://user:pass@localhost:5432/your_db npm test
+# -> middle test fails: column "undefined" does not exist
+```
 
 The essence:
 
