@@ -84,7 +84,7 @@ The array operator should serialize identically whether the predicate lands in t
 
 | Dependency | Version |
 | --- | --- |
-| node | 20.19.5 |
+| node | 24.14.1 |
 | typescript | 5.6.3 |
 | mikro-orm | 7.1.4 |
 | @mikro-orm/postgresql | 7.1.4 |
